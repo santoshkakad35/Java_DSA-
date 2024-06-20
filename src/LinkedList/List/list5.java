@@ -1,5 +1,5 @@
 package LinkedList.List;
-
+// reverse print of list
 public class list5 {
     public static void display(Node head) {
         if(head == null) return;    // base
