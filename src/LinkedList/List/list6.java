@@ -1,5 +1,5 @@
 package LinkedList.List;
-
+// length of list
 public class list6 {
     public static int length(Node head) {
         int count = 0;

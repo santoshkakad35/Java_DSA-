@@ -20,6 +20,7 @@ public class list2 {
         c.next = d;
 
         Node temp = a;
+//        System.out.println(temp.data);
         while(temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;

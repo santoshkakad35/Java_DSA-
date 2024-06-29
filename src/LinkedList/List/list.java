@@ -18,7 +18,7 @@ public class list {
         a.next = b; // 5->3 9 16    // we put b address in a.next
         System.out.println(a);
         System.out.println(a.next); // b address
-        System.out.println(b);*/
+        System.out.println(b);*/ // it print b address
 
 
         /*a.next = b;
