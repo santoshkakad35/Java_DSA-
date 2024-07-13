@@ -1,5 +1,5 @@
 package LinkedList.List;
-
+// using recursion
 public class list4 {
     public static void display(Node head) {
         if(head == null) return;    // base

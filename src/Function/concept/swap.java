@@ -24,6 +24,9 @@ public class swap {
         b = temp;
 
         // basically swaping not occurs
+
+        System.out.println(a);
+        System.out.println(b);
     }
 
 }

@@ -16,6 +16,6 @@ public class scope {
         // Anything initialize outside you can't reinitialized but modify
         // but anything initialize inside you can't use ouside
         // but you can initialize the same one outside that is inside it not show error
-    }
+     }
 
 }
