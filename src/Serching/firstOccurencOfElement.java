@@ -2,7 +2,7 @@ package Serching;
 
 // find the first Occurrence of element in Binery serch .
 
-public class firstOccurenceBS {
+public class firstOccurencOfElement {
     static int firstOcc(int[] arr, int x) {
         int n = arr.length;
         int st = 0, end = n-1;

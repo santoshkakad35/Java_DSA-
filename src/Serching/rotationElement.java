@@ -2,7 +2,7 @@ package Serching;
 
 /* rotation array using binery serch find k element */
 
-public class rotationOfBS {
+public class rotationElement {
     static int rotate(int[] arr) {
         int st = 0, end = arr.length - 1;
         int ans = -1;

@@ -1,6 +1,6 @@
 package Serching;
 
-public class BinerySerch {
+public class binerySerch {
     static boolean Binery(int[] arr, int target) {
         int st = 0;
         int end = arr.length-1;

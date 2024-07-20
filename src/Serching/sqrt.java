@@ -1,7 +1,7 @@
 package Serching;
 // find the sqrt of non-negative value x . round it off to the nearst floor integer value
 
-public class sqrtBS {
+public class sqrt {
     static int sqrt(int x) {
         int st = 0, end = x;
         int ans = -1;
