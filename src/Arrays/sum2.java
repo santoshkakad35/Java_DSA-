@@ -25,4 +25,11 @@ public class sum2 {
         int k = 9;
         System.out.println(Arrays.toString(targetSum(arr,k)));;
     }
+
+    public static class firstSecThird {
+        public static void main(String[] args) {
+            int[] arr = {12, 35, 1, 10, 34, 1, 50};
+
+        }
+    }
 }

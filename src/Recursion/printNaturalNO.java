@@ -2,22 +2,19 @@ package Recursion;
 
 import java.util.Scanner;
 
-public class printNaturalNO {
-    static void printIncreasing(int n) {
-        //  Base Case
-        if (n == 1) {
-            System.out.print(n + "  ");
+public class printNaturalNo {
+
+    static void printNo(int n) {
+        if(n==1) {
+            System.out.println(1);
             return;
         }
-        // Recursive Case
-        printIncreasing(n - 1);
-        // self work
-        System.out.print(n + " ");
+        printNo(n - 1);
+        System.out.println(n);
     }
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        printIncreasing(n);
+        Scanner sv = new Scanner(System.in);
+        int n = sv.nextInt();
+        printNo(n);
     }
 }

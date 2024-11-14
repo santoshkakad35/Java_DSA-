@@ -1,23 +1,18 @@
 package String;
+//https://www.geeksforgeeks.org/problems/reverse-a-string/1?page=1&category=Strings&difficulty=Basic,Easy,Medium&status=solved,attempted&sortBy=submissions
+public class ReverseString {
+    public static void rev(String st) {
+        StringBuilder sb = new StringBuilder();
+        char[] ch = st.toCharArray();
 
-import java.util.Scanner;
+        for (int i = ch.length-1; i >= 0 ; i--) {
+            sb.append(ch[i]);
+        }
 
-public class reverseString {
+        System.out.println(sb.toString());
+    }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = "I love Java code";
-        String[] str2 = str.split(" ");
-        for(int i=str2.length-1;i>=0;i--) {
-            System.out.print(str2[i]+" ");
-        }
-
-
-        /*
-        String str = "hello";
-        for(int i=str.length()-1;i>=0;i--) {
-            System.out.print(str.charAt(i)+" ");
-        }
-
-        */
+        String st = "Geeks";
+        rev(st);
     }
 }

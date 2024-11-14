@@ -3,20 +3,23 @@ package Recursion;
 import java.util.Scanner;
 
 public class fibonacci {
-    static int check(int n) {
-        if (n == 0) return 0;
-        if (n == 1) return 1;
+    static int fibno(int n) {
+        // base case
+        if(n==0) {
+            return 0;
+        }
 
-        int p1 = check(n - 1);
-        int p2 = check(n - 2);
+        if(n==1) {
+            return 1;
+        }
 
-        return p1 + p2;
+        int fibi1 = fibno(n-1);
+        int fibi2 = fibno(n-2);
+        return fibi1 + fibi2;
     }
-
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = 6;
-        System.out.print(check(n));
+        Scanner sv = new Scanner(System.in);
+        int n = sv.nextInt();
+        System.out.print(fibno(n));
     }
 }
