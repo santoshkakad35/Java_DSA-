@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.*;
 public class LongestConsecutiveSequence {
-    static int longestSeq(int[] arr) {
+    static int Leetcode128(int[] arr) {
         if(arr.length == 0 || arr == null) {
             return 0;
         }
@@ -25,6 +25,6 @@ public class LongestConsecutiveSequence {
     }
     public static void main(String[] args) {
         int[] arr = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
-        System.out.println(longestSeq(arr));;
+        System.out.println(Leetcode128(arr));;
     }
 }

@@ -1,7 +1,7 @@
 package BinerySerch;
 
 public class binerySerch {
-    static boolean Binery(int[] arr, int target) {
+    static boolean Leetcode704(int[] arr, int target) {
         int st = 0;
         int end = arr.length-1;
         while(st <= end) {
@@ -21,6 +21,6 @@ public class binerySerch {
         int[] arr = {2,4,5,7,15,20,25,45,60,77};
         int target = 60;
 //        Binery(arr, target);
-        System.out.println(Binery(arr, target));
+        System.out.println(Leetcode704(arr, target));
     }
 }

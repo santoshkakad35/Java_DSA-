@@ -1,7 +1,7 @@
 package Arrays;
-// 121 Buy and Sell the stock
+// 121  Leetcode Buy and Sell the stock
 public class BuyAndSellStock {
-    public static int maxProfit(int[] prices) {
+    public static int Leetcode121(int[] prices) {
         if (prices == null || prices.length < 2) {
             return 0;
         }
@@ -20,6 +20,6 @@ public class BuyAndSellStock {
     }
     public static void main(String[] args) {
         int[] arr = {7,1,5,3,6,4};
-        System.out.println(maxProfit(arr));
+        System.out.println(Leetcode121(arr));
     }
 }

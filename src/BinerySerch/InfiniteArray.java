@@ -1,5 +1,5 @@
 package BinerySerch;
-
+// gfg (link is not available)
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {3,5,7,9,10,90,100,120,150,180};

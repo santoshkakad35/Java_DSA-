@@ -1,9 +1,8 @@
-package Arrays;
-
-import java.util.Arrays;
-//75. Sort012
-public class sort012 {
-    static void sortSeq(int[] arr) {
+package TwoPointer;
+import java.util.*;
+//75 Sort012 Leetcode
+public class Sort012 {
+    static void Leetcode75(int[] arr) {
         int st = 0, med = 0,end = arr.length-1;
         while(med <= end) {
             if(arr[med] == 0) {
@@ -31,7 +30,7 @@ public class sort012 {
         nums[j] = temp;
     }
     public static void main(String[] args) {
-        int[] arr = {2, 0, 2, 1, 1, 0};
-        sortSeq(arr);
+        int[] arr = {2,0,1};
+        Leetcode75(arr);
     }
 }

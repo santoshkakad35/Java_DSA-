@@ -1,51 +1,55 @@
 package BinerySerch;
 
 import java.util.Arrays;
-
+// Leetcode 34 first and last Position element
 public class firstAndLastPositionElementSorted {
-    public static int[] check(int[] nums,int target) {
-        int[] ans = new int[2];
-        ans[0] = first(nums,target);
-        ans[1] = last(nums,target);
-        return ans;
-    }
-    public static int first(int[] nums, int target) {
-        int st = 0, end = nums.length-1;
-        int idx = -1;
-        while(st<=end) {
-            int mid = st + (end - st) / 2;
-            if(nums[mid] == target) {
-                idx = mid;
-            }
-
-            if(nums[mid]>= target) {
-                end = mid - 1;
-            } else {
-                st  = mid + 1;
-            }
-        }
-        return idx;
+    static int[] Leetcode34(int[] arr, int tar) {
+        int[] res  = new int[2];
+        res[0] = firstElement(arr,tar);
+        res[1] = lastElement(arr,tar);
+        return res;
     }
 
-    public static int last(int[] nums, int target) {
-        int st = 0, end = nums.length-1, idx = -1;
+    static int firstElement(int[] arr, int tar) {
+        int st = 0, end = arr.length-1;
+        int flag = 0;
         while(st<=end) {
             int mid = st + (end - st) / 2;
-            if(nums[mid] == target) {
-                idx =  mid;
+            if(arr[mid] == tar) {
+                flag = mid;
+                end = mid-1;
             }
 
-            if(nums[mid] <= target) {
-                st  = mid + 1;
+            else if(arr[mid] < tar) {
+                st = mid + 1;
             } else {
                 end = mid - 1;
             }
         }
-        return idx;
+        return flag;
+    }
+
+    static int lastElement(int[] arr, int tar) {
+        int st = 0 ,end = arr.length-1;
+        int flag = 0;
+        while(st<=end) {
+            int mid = st + (end-st)/2;
+            if(arr[mid] == tar) {
+                flag = mid;
+                st = mid+1;
+            }
+
+            else if(arr[mid] > tar) {
+                end = mid-1;
+            } else {
+                st = mid+1;
+            }
+        }
+        return flag;
     }
     public static void main(String[] args) {
         int[] arr = {5,7,7,8,8,10};
         int target = 8;
-        System.out.println(Arrays.toString(check(arr,target)));
+        System.out.println(Arrays.toString(Leetcode34(arr,target)));
     }
 }
